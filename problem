@@ -1,0 +1,19 @@
+def player_input():
+    player1 = ""
+    player2 = ""
+    
+    choosing = False
+    
+    while choosing == False:
+        player1 = input('"X" or "O"?')
+        if player1 == 'X':
+            choosing = True
+            player2 = 'O'        
+        elif player1 == 'O':
+            choosing = True
+            player2 = 'X'
+        else: 
+            print("Please enter 'X' or 'O'")
+            choosing = False
+        
+player_input()
